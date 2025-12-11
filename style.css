@@ -14,9 +14,13 @@ Author URI: https://gianko.com
 .cyber-card,
 .editor-styles-wrapper .cyber-card {
     position: relative;
-    padding: 40px; 
     /* Aseguramos que el contenido esté por encima del fondo */
     z-index: 1; 
+  }
+
+.cyber-card-p40,
+.editor-styles-wrapper .cyber-card-p40 {
+    padding: 40px;
   }
   
   /* --- CAPA 1: El Borde y el Brillo (Glow) --- */
