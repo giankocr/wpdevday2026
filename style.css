@@ -3,10 +3,11 @@ Author: Gianko
 Author URI: https://gianko.com
 */
 :root {
-    --green-primary-color: #caf045;
-    --green-secondary-color: #46e44b;
-    --black-color: #000000;
-    --white-color: #ffffff;
+    --wp--preset--color--accent-5: #b5bdbc;
+    --wp--preset--color--custom-negro: #000000;
+    --wp--preset--color--custom-blanco: #fbfbfb;
+    --wp--preset--color--custom-verde-claro: #caf045;
+    --wp--preset--color--custom-verde-oscuro: #20de4a;
 }
 
 .cyber-card {
@@ -21,7 +22,7 @@ Author URI: https://gianko.com
     content: "";
     position: absolute;
     inset: 0; /* Ocupa todo el espacio del padre */
-    background: var(--green-primary-color); /* Color Verde Neón */
+    background: var(--wp--preset--color--custom-verde-claro); /* Color Verde Neón */
     z-index: -2; /* Se coloca al fondo */
     
     /* Recorte de esquinas (puedes ajustar los 20px para cambiar el tamaño del corte) */
@@ -37,7 +38,7 @@ Author URI: https://gianko.com
     );
   
     /* El efecto de resplandor (Glow) */
-    filter: drop-shadow(0 0 5px var(--green-secondary-color)); 
+    filter: drop-shadow(0 0 5px var(--wp--preset--color--custom-verde-oscuro)); 
   }
   
   /* --- CAPA 2: El Fondo Negro Interior --- */
@@ -46,7 +47,7 @@ Author URI: https://gianko.com
     position: absolute;
     /* 'inset' define el grosor del borde (2px en este caso) */
     inset: 2px; 
-    background: var(--black-color); /* Fondo casi negro */
+    background: var(--wp--preset--color--custom-negro); /* Fondo casi negro */
     z-index: -1; /* Entre el texto y el borde verde */
     
     /* El mismo recorte para que coincida */
