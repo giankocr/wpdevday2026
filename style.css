@@ -2,7 +2,8 @@
 Author: Gianko
 Author URI: https://gianko.com
 */
-:root {
+:root,
+.editor-styles-wrapper {
     --wp--preset--color--accent-5: #b5bdbc;
     --wp--preset--color--custom-negro: #000000;
     --wp--preset--color--custom-blanco: #fbfbfb;
@@ -10,7 +11,8 @@ Author URI: https://gianko.com
     --wp--preset--color--custom-verde-oscuro: #20de4a;
 }
 
-.cyber-card {
+.cyber-card,
+.editor-styles-wrapper .cyber-card {
     position: relative;
     padding: 40px; 
     /* Aseguramos que el contenido esté por encima del fondo */
@@ -18,7 +20,8 @@ Author URI: https://gianko.com
   }
   
   /* --- CAPA 1: El Borde y el Brillo (Glow) --- */
-  .cyber-card::before {
+  .cyber-card::before,
+  .editor-styles-wrapper .cyber-card::before {
     content: "";
     position: absolute;
     inset: 0; /* Ocupa todo el espacio del padre */
@@ -42,7 +45,8 @@ Author URI: https://gianko.com
   }
   
   /* --- CAPA 2: El Fondo Negro Interior --- */
-  .cyber-card::after {
+  .cyber-card::after,
+  .editor-styles-wrapper .cyber-card::after {
     content: "";
     position: absolute;
     /* 'inset' define el grosor del borde (2px en este caso) */
